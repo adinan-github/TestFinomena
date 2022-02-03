@@ -44,10 +44,3 @@ enum PeriodOption: String, Codable {
   case month = "/fund-ranking-1M.json"
   case year = "/fund-ranking-1Y.json"
 }
-
-enum OptionReturn: String {
-  case day = "1 Day Return"
-  case week = "1 Week Return"
-  case month = "1 Month Return"
-  case year = "1 Year Return"
-}

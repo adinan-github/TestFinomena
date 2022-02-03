@@ -10,6 +10,14 @@ internal enum L10n {
   internal static var favButtonTitleSave: String { return L10n.tr("Localizable", "fav_button_title_save") }
   /// ลบ
   internal static var favButtonTitleUnsave: String { return L10n.tr("Localizable", "fav_button_title_unsave") }
+  /// กำไร 1 วัน
+  internal static var optionReturnDay: String { return L10n.tr("Localizable", "option_return_day") }
+  /// กำไร 1 เดือน
+  internal static var optionReturnMonth: String { return L10n.tr("Localizable", "option_return_month") }
+  /// กำไร 1 สัปดาห์
+  internal static var optionReturnWeek: String { return L10n.tr("Localizable", "option_return_week") }
+  /// กำไร 1 ปี
+  internal static var optionReturnYear: String { return L10n.tr("Localizable", "option_return_year") }
   /// ข้อมูลอัพเดตเมื่อ:
   internal static var updateNavDateTitle: String { return L10n.tr("Localizable", "update_nav_date_title") }
 }

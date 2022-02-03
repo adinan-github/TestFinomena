@@ -10,3 +10,7 @@
 "fav_button_title_save" = "บันทึก";
 "fav_button_title_unsave" = "ลบ";
 "change_language_title" = "เปลี่ยนภาษาภายในแอพ";
+"option_return_day" = "กำไร 1 วัน";
+"option_return_week" = "กำไร 1 สัปดาห์";
+"option_return_month" = "กำไร 1 เดือน";
+"option_return_year" = "กำไร 1 ปี";

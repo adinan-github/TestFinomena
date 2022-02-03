@@ -93,13 +93,13 @@ class FundViewCell: UITableViewCell {
   private func setOptionReturn(option: PeriodOption) {
     switch option {
     case .day:
-      optionReturnLabel.text = OptionReturn.day.rawValue
+      optionReturnLabel.text = L10n.optionReturnDay
     case .week:
-      optionReturnLabel.text = OptionReturn.week.rawValue
+      optionReturnLabel.text = L10n.optionReturnWeek
     case .month:
-      optionReturnLabel.text = OptionReturn.month.rawValue
+      optionReturnLabel.text = L10n.optionReturnMonth
     case .year:
-      optionReturnLabel.text = OptionReturn.year.rawValue
+      optionReturnLabel.text = L10n.optionReturnYear
     }
   }
   

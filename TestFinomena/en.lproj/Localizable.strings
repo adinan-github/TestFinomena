@@ -10,3 +10,7 @@
 "fav_button_title_save" = "Save";
 "fav_button_title_unsave" = "Remove";
 "change_language_title" = "Change App Language";
+"option_return_day" = "1 Day Return";
+"option_return_week" = "1 Week Return";
+"option_return_month" = "1 Month Return";
+"option_return_year" = "1 Year Return";
