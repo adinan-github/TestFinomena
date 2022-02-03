@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  TestFinomena
+
+  Created by ADINAN YUJAROEN on 1/2/2565 BE.
+  
+*/
+
+"update_nav_date_title" = "ข้อมูลอัพเดตเมื่อ:";
+"fav_button_title_save" = "บันทึก";
+"fav_button_title_unsave" = "ลบ";
+"change_language_title" = "เปลี่ยนภาษาภายในแอพ";

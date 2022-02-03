@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fund Ranking-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="FundRankingViewController" customModule="TestFinomena" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LUC-Ha-sOe">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1073"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TXr-sw-bSc">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="b3E-eq-kSx">
+                                                <rect key="frame" x="5" y="5" width="404" height="41"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <segments>
+                                                    <segment title="1D"/>
+                                                    <segment title="1W"/>
+                                                    <segment title="1M"/>
+                                                    <segment title="1Y"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="switchChange:" destination="Y6W-OH-hqX" eventType="valueChanged" id="2wu-ig-gEa"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="1Oa-ke-ILQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="b3E-eq-kSx" secondAttribute="bottom" constant="5" id="36U-vb-3kP"/>
+                                            <constraint firstAttribute="trailing" secondItem="b3E-eq-kSx" secondAttribute="trailing" constant="5" id="fx4-W6-iIY"/>
+                                            <constraint firstItem="b3E-eq-kSx" firstAttribute="leading" secondItem="TXr-sw-bSc" secondAttribute="leading" constant="5" id="nHD-nH-bg1"/>
+                                            <constraint firstItem="b3E-eq-kSx" firstAttribute="top" secondItem="TXr-sw-bSc" secondAttribute="top" constant="5" id="wGg-on-1al"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqi-v3-f8H">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="1023"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cKA-iS-mZJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1023"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="cKA-iS-mZJ" firstAttribute="leading" secondItem="lqi-v3-f8H" secondAttribute="leading" id="7Ij-gt-jQu"/>
+                                            <constraint firstItem="cKA-iS-mZJ" firstAttribute="top" secondItem="lqi-v3-f8H" secondAttribute="top" id="Xai-BD-ONC"/>
+                                            <constraint firstAttribute="bottom" secondItem="cKA-iS-mZJ" secondAttribute="bottom" id="gJz-JB-3gq"/>
+                                            <constraint firstAttribute="trailing" secondItem="cKA-iS-mZJ" secondAttribute="trailing" id="tXy-ik-uJk"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LUC-Ha-sOe" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="9zh-Xj-fMV"/>
+                            <constraint firstItem="LUC-Ha-sOe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="DRY-oq-DNV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="LUC-Ha-sOe" secondAttribute="bottom" id="Iwn-kU-UP6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="LUC-Ha-sOe" secondAttribute="trailing" id="apK-29-Ls5"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fund Ranking" image="note.text" catalog="system" id="Z0A-Hs-FAM"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1200"/>
+                    <connections>
+                        <outlet property="segment" destination="b3E-eq-kSx" id="w0P-FY-cRg"/>
+                        <outlet property="tableView" destination="cKA-iS-mZJ" id="ca0-z7-Ssa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="106"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="note.text" catalog="system" width="128" height="106"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

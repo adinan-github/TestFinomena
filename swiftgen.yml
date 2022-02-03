@@ -1,0 +1,15 @@
+output_dir: TestFinomena/Constants
+ib:
+  inputs: TestFinomena
+  outputs:
+    - templatePath: swiftgen/ib/my-swift4.stencil
+      output: Storyboards.swift
+      params:
+        module: TestFinomena
+strings:
+  inputs: TestFinomena/th.lproj/Localizable.strings
+  outputs:
+    - templatePath: swiftgen/strings/my-swift4.stencil
+      output: LocalizedStrings.swift
+      params:
+        module: TestFinomena

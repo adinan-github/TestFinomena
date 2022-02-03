@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  TestFinomena
+
+  Created by ADINAN YUJAROEN on 1/2/2565 BE.
+  
+*/
+
+"update_nav_date_title" = "update date:";
+"fav_button_title_save" = "Save";
+"fav_button_title_unsave" = "Remove";
+"change_language_title" = "Change App Language";
